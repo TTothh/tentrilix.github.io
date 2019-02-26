@@ -1,0 +1,89 @@
+* {
+	font-family: "Bungee";
+	font-size: 16px;
+}
+
+td {
+	display: table-cell;
+	border: 0px solid black;
+	padding: 0px 0px 0px 0px;
+	line-height: 30px;
+}
+
+div {
+	min-height: 3px;
+	border: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.header {
+	border: 1px solid black;
+	text-align: center;
+	line-height: 60px;
+}
+
+.header:nth-child(even) {
+	background-color: #db8;
+}
+
+.header:nth-child(odd) {
+	background-color: #b49970;
+}
+
+.hour {
+	height: 30px;
+	background-color: #e2c383 !important;
+	text-align: center;
+	line-height: 30px;
+}
+
+.mins {
+	height: 110px;
+}
+
+.menubutton {
+	background-color: #fff0;
+	border: 0px #0000;
+	color: #db8;
+	width: calc(100% / 6);
+	height: 100px;
+	padding: 0px 0px 0px 0px;
+	float: left;
+}
+
+#ido {
+	background-color: #fff;
+}
+
+#grad {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	background: linear-gradient(#252525, #000000);
+}
+
+#zero {
+	display: none;
+	width: auto;
+}
+
+#days {
+	display: none;
+	width: 100%;
+	border-collapse: collapse;
+}
+
+#main {
+	height: 2100px !important;
+	vertical-align: top;
+	border-left-width: 1px;
+}
+
+div[id^="k"] {
+	background-color: #f9c87c;
+}
