@@ -86,4 +86,16 @@ div {
 
 div[id^="k"] {
 	background-color: #f9c87c;
+	animation: fade-in 1s;
+	top: -10px;
+}
+
+@keyframes fade-in {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+		top: 0px;
+	}
 }

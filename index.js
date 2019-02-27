@@ -54,7 +54,6 @@ function generate(day) {
 		} else {
 			koncert = 24*60 - kezdet;
 		}
-		
 		place(szunet, koncert, szinpad, i, day);
 	}
 }
@@ -74,7 +73,6 @@ function place(sz, k, szinpad, i, day) {
 	$("[value=" + szinpad + "]").append("<div id='k" + i + "' style='height: calc(100%/780*" + k + ");'></div>");
 	
 	$("#k" + i).html(time[i] + "<br>" + day[i]);
-	console.log("asd");
 }
 
 function clear() {
