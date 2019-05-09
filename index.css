@@ -28,6 +28,14 @@ td {
 	padding: 0px 0px 0px 0px;
 }
 
+.fading {
+	animation: 0.3s ease-in 0s 1 normal none running fade-in;
+}
+
+.faded {
+	animation: 0.3s ease-in 0s 1 reverse none running fade-in;
+}
+
 .header {
 	border: 1px solid black !important;
 	line-height: 60px;
@@ -107,8 +115,9 @@ td {
 }
 
 #zero {
-	border-radius: 20px !important;
+	border-radius: 200px !important;
 	display: none;
+	right: 0px;
 	width: auto;
 }
 

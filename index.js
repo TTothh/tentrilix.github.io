@@ -1,4 +1,5 @@
 $(document).ready(function() {
+	var day = 
 	$("#" + new Date().getDay()).trigger("click");
 });
 
@@ -12,12 +13,16 @@ var pentek = ["MAGOR", "BLOODY ROOTS", "MOBY DICK", "JINJER", "SOULFLY", "PHOENI
 var szombat = ["ØRDØG", "WATCH MY DYING", "APEY AND THE PEA", "BÖMBERS", "PHIL ANSELMO & THE ILLEGALS", "BLUES COMPANY", "P.BOX", "RUDÁN JOE BAND", "MOBILMÁNIA + VIKIDÁL", "LORD", "PADDY AND THE RATS", "FAMINE HILL", "HARMED", "STUBBORN", "OMEGA DIATRIBE", "INSANE", "OUR HOLLOW, OUR HOME", "ABORTED", "BURY TOMORROW", "THE SOUTHERN ORACLE", "BESZAVAZÁS", "SNIFFYCTION", "LOST CONTINENT", "TRILLION", "DIVIDED", "DYSTOPIA", "CONTINUUM", "PAIR O' DICE", "ROTOR"];
 
 function nulladik() {
-	$("#days").css("display" ,"none");
-	$("#zero").css("display" ,"block");
+	$("#days").css("display", "none");
+	$("#zero").css("display", "initial");
+	$("#zero").removeClass("faded");
+	$("#zero").addClass("fading");
 }
 
 function nap(melyik) {
 	$("#days").css("display" ,"inline-table");
+	$("#zero").removeClass("fading");
+	$("#zero").addClass("faded");
 	$("#zero").css("display" ,"none");
 	
 	clear();
