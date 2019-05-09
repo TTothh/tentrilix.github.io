@@ -1,5 +1,5 @@
 ::-moz-focus-inner {
-	border: 0;
+	border: 0px;
 }
 
 * {
@@ -8,8 +8,8 @@
 }
 
 div {
-	border: 0px 0px 0px 0px;
-	margin: 0px 0px 0px 0px;
+	border: none !important;
+	margin: 0px !important;
 	min-height: 3px;
 	text-align: center;
 	vertical-align: middle;
@@ -22,14 +22,14 @@ div[id^="k"] {
 }
 
 td {
-	border: 0px solid black;
+	border: 0px solid black !important;
 	display: table-cell;
 	line-height: 30px;
 	padding: 0px 0px 0px 0px;
 }
 
 .header {
-	border: 1px solid black;
+	border: 1px solid black !important;
 	line-height: 60px;
 	text-align: center;
 	width: calc(90% / 4);
@@ -67,6 +67,10 @@ td {
 	transition: all 0.2s ease-in;
 }
 
+.menubutton, .menubutton:active, .menubutton:focus {
+	outline: 0;
+}
+
 .menubutton:hover {
 	background-color: #f9c87c;
 	color: #000;
@@ -97,13 +101,13 @@ td {
 }
 
 #main {
-	border-left-width: 1px;
+	border-left-width: 1px !important;
 	height: 2100px !important;
 	vertical-align: top;
 }
 
 #zero {
-	border-radius: 20px;
+	border-radius: 20px !important;
 	display: none;
 	width: auto;
 }
