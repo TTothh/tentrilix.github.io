@@ -1,5 +1,4 @@
 $(document).ready(function() {
-	var day = 
 	$("#" + new Date().getDay()).trigger("click");
 });
 

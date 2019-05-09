@@ -76,7 +76,7 @@ td {
 }
 
 .menubutton, .menubutton:active, .menubutton:focus {
-	outline: 0;
+	outline: none;
 }
 
 .menubutton:hover {
