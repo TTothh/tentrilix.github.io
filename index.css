@@ -1,27 +1,38 @@
+::-moz-focus-inner {
+	border: 0;
+}
+
 * {
 	font-family: "Bungee";
 	font-size: 16px;
 }
 
-td {
-	display: table-cell;
-	border: 0px solid black;
-	padding: 0px 0px 0px 0px;
-	line-height: 30px;
-}
-
 div {
-	min-height: 3px;
 	border: 0px 0px 0px 0px;
 	margin: 0px 0px 0px 0px;
+	min-height: 3px;
 	text-align: center;
 	vertical-align: middle;
 }
 
+div[id^="k"] {
+	animation: fade-in 1s;
+	background-color: #f9c87c;
+	top: -10px;
+}
+
+td {
+	border: 0px solid black;
+	display: table-cell;
+	line-height: 30px;
+	padding: 0px 0px 0px 0px;
+}
+
 .header {
 	border: 1px solid black;
-	text-align: center;
 	line-height: 60px;
+	text-align: center;
+	width: calc(90% / 4);
 }
 
 .header:nth-child(even) {
@@ -33,61 +44,68 @@ div {
 }
 
 .hour {
-	height: 30px;
 	background-color: #e2c383 !important;
-	text-align: center;
+	height: 30px;
 	line-height: 30px;
+	text-align: center;
+}
+
+.ido {
+	width: 10% !important;
+}
+
+.menubutton {
+	background-color: #fff0;
+	border: 0px #0000;
+	border-radius: 20px;
+	color: #db8;
+	float: left;
+	height: 70px;
+	margin: 15px 10px 15px 10px;
+	padding: 0px 0px 0px 0px;
+	width: calc((100% / 6) - 20px);
+	transition: all 0.2s ease-in;
+}
+
+.menubutton:hover {
+	background-color: #f9c87c;
+	color: #000;
 }
 
 .mins {
 	height: 110px;
 }
 
-.menubutton {
-	background-color: #fff0;
-	border: 0px #0000;
-	color: #db8;
-	width: calc(100% / 6);
-	height: 100px;
-	padding: 0px 0px 0px 0px;
-	float: left;
+#days {
+	border-collapse: collapse;
+	display: none;
+	width: 100%;
+}
+
+#grad {
+	background: linear-gradient(#252525, #000000);
+	height: 100%;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: -1;
 }
 
 #ido {
 	background-color: #fff;
 }
 
-#grad {
-	width: 100%;
-	height: 100%;
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: -1;
-	background: linear-gradient(#252525, #000000);
+#main {
+	border-left-width: 1px;
+	height: 2100px !important;
+	vertical-align: top;
 }
 
 #zero {
+	border-radius: 20px;
 	display: none;
 	width: auto;
-}
-
-#days {
-	display: none;
-	width: 100%;
-	border-collapse: collapse;
-}
-
-#main {
-	height: 2100px !important;
-	vertical-align: top;
-	border-left-width: 1px;
-}
-
-div[id^="k"] {
-	background-color: #f9c87c;
-	animation: fade-in 1s;
-	top: -10px;
 }
 
 @keyframes fade-in {
