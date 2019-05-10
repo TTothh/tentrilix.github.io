@@ -14,14 +14,12 @@ var szombat = ["ØRDØG", "WATCH MY DYING", "APEY AND THE PEA", "BÖMBERS", "PHI
 function nulladik() {
 	$("#days").css("display", "none");
 	$("#zero").css("display", "initial");
-	$("#zero").removeClass("faded");
 	$("#zero").addClass("fading");
 }
 
 function nap(melyik) {
 	$("#days").css("display" ,"inline-table");
 	$("#zero").removeClass("fading");
-	$("#zero").addClass("faded");
 	$("#zero").css("display" ,"none");
 	
 	clear();

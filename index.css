@@ -8,7 +8,10 @@
 }
 
 div {
+	align-items: center;
 	border: none !important;
+	display: flex;
+	justify-content: center;
 	margin: 0px !important;
 	min-height: 3px;
 	text-align: center;
@@ -30,10 +33,6 @@ td {
 
 .fading {
 	animation: 0.3s ease-in 0s 1 normal none running fade-in;
-}
-
-.faded {
-	animation: 0.3s ease-in 0s 1 reverse none running fade-in;
 }
 
 .header {
@@ -75,8 +74,10 @@ td {
 	transition: all 0.2s ease-in;
 }
 
-.menubutton, .menubutton:active, .menubutton:focus {
+.menubutton:active, .menubutton:focus {
 	outline: none;
+	background-color: #f9c87c;
+	color: #000;
 }
 
 .menubutton:hover {
