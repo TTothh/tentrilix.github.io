@@ -46,6 +46,10 @@ td {
 	width: calc(90% / 4);
 }
 
+.nomargin {
+	margin-right-width: 0px !important;
+}
+
 .header:nth-child(even) {
 	background-color: #db8;
 }
@@ -70,6 +74,7 @@ td {
 	border: 0px #0000;
 	border-radius: 20px;
 	color: #db8;
+	cursor: pointer;
 	float: left;
 	height: 70px;
 	margin: 15px 10px 15px 10px;
