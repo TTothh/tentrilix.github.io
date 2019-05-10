@@ -7,6 +7,10 @@
 	font-size: 16px;
 }
 
+body {
+	margin: 0px;
+}
+
 div {
 	align-items: center;
 	border: none !important;
