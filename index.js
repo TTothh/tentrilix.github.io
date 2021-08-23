@@ -1,3 +1,5 @@
+//Simple hardcoded
+
 $(document).ready(function() {
 	$("#" + new Date().getDay()).trigger("click");
 });
@@ -26,6 +28,7 @@ function nap(melyik) {
 	generate(melyik);
 }
 
+//takes a day and generates the corresponding column of the table
 function generate(day) {
 	var szinpad = szinpadok[0];
 	var j = 0;
@@ -64,6 +67,7 @@ function generate(day) {
 	}
 }
 
+//calculate properties for Bands and breaks for placement on the page
 function calc(which) {
 	var ido = which.split(" - ");
 	var kezdet = (parseInt(ido[0].split(":")[0]) * 60) + (parseInt(ido[0].split(":")[1]));
@@ -72,6 +76,7 @@ function calc(which) {
 	return [kezdet, veg];
 }
 
+//generates html code
 function place(sz, k, szinpad, i, day) {
 	if(sz > 0) {
 		$("[value=" + szinpad + "]").append("<div id='sz" + i + "' style='height: calc(100%/780*" + sz + ");'></div>");
